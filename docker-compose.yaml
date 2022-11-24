@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  config_server:
+    container_name: api-gateway
+    image: apolos7/api-gateway:latest
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+    networks:
+      - msvc
+    restart: always
+
+networks:
+  msvc:
+    name: msvc
