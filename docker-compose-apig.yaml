@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  config_server:
+  api-gateway:
     container_name: api-gateway
     image: apolos7/api-gateway:latest
     ports:
